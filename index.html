@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+      html { height: 100% }
+      body { height: 100%; margin: 0; padding: 0 }
+      #map_canvas { height: 100%; float:left;}
+    </style>
+    <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFqZFbq0LaiNVKVh1dq812plUk3jFkfM4&sensor=true">
+    </script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+
+    <script type="text/javascript">
+		function initialize() {
+			loadMaps();
+		}
+
+		function loadMaps() { 
+			var mapOptions = { 
+				center: new google.maps.LatLng(-7, -55),
+				zoom: 4,
+				mapTypeId: google.maps.MapTypeId.ROADMAP 
+			}; 
+			var map = new google.maps.Map(document.getElementById("map_canvas"), mapOptions); 
+		}
+
+		$(document).ready(function(){
+			$('#add_target').click(function() {
+				$('#targets #add_target').before('<br/><input type="text" name="address" class="address">');
+			});
+		});
+	</script>
+	</head> 
+	
+	<body onload="initialize()">
+		<div id="map_canvas" style="width:50%; height:70%"></div>
+		
+		<div>
+			<label>From:</label>
+			<input type="text" name="address" class="address">
+		</div>
+	
+		<div id="targets">
+			<label>Targets:</label>
+			<br/>
+			<input type="text" name="address" class="address">
+			<a href="#" id="add_target"> add </a>
+		</div>
+  </body>
+</html>
