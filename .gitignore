@@ -1,2 +1,7 @@
 .DS_Store
-test.html
+node_modules
+temp
+dist
+.sass-cache
+.tmp
+app/bower_components
