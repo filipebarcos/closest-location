@@ -1,0 +1,21 @@
+{
+  "name": "closest-location",
+  "version": "0.0.1",
+  "homepage": "https://github.com/filipebarcos/closest-location",
+  "authors": [
+    "Filipe Costa <filipebarcos@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "gmaps": "~0.4.16"
+  }
+}
