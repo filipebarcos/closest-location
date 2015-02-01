@@ -1,1 +1,0 @@
-ClosestLocation.ApplicationAdapter = DS.FixtureAdapter;
