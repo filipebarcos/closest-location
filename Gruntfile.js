@@ -16,7 +16,7 @@ module.exports = function(grunt) {
       server: {
         options: {
           base: 'public',
-          port: 3000,
+          port: 8899,
           hostname: '*',
         },
       },
